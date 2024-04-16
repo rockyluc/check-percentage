@@ -1,0 +1,19 @@
+body
+{
+    background-color: rgb(160, 176, 190);
+
+}
+.button
+{
+    width: 30%;
+    height: 50px;
+    background: rgb(26, 162, 172);
+}
+.button1
+{
+    background-color: rgb(93, 201, 228);
+}
+.font
+{
+    color: rgb(75, 80, 73);
+}

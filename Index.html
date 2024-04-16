@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check</title>
+    <link rel="stylesheet" href="per.css">
+    <script language="javascript">
+        function calculate()
+        {
+    var a = parseInt(f1.t1.value);
+    var b =  parseInt(f1.t2.value);
+    var c = a/b*100;
+            f1.t3.value=c;
+        
+        if((c>80) && (c<=100))
+        document.getElementById("p1").innerHTML="<img src='https://media.tenor.com/W33tam-cL30AAAAM/yelynn-yelynnn.gif' height='30%' width='30%'></img><h2>Congratulations</h2><h1>You Are Passed With 'A+' Grade </h1>";
+        else if((c>=60) &&(c<=80))
+        document.getElementById("p1").innerHTML="<img src='https://media.tenor.com/3-IELHeQQgYAAAAM/happy-christmas-happy-new-year.gif' height='30%' width='30%'></img><h2>Congratulations</h2><h1>You Are Passed With 'A' Grade </h1>";
+        else if ((c>=41) &&(c<=59))
+        document.getElementById("p1").innerHTML="<img src='https://media.tenor.com/OT7yOleaP3kAAAAM/excited-spin.gif' height='30%' width='30%'></img><h2>Congratulations</h2><h1>You Are Passed With 'B' Grade </h1>";
+        else if((c>=33) &&(c<=40))
+        document.getElementById("p1").innerHTML="<img src='https://media.tenor.com/d_11iUkVrRcAAAAM/roll-around.gif' height='30%' width='30%'></img><h2>Congratulations</h2><h1>You Are Passed With 'C' Grade </h1>";
+        else if (c<=32) 
+     document.getElementById("p1").innerHTML="<img src='https://media.tenor.com/FCU86ZQ1OxMAAAAM/tkthao219-bubududu.gif' height='30%' width='30%'></img> <h1>You Are Fail</h1> <h2>Your Grade Is 'D'</h2>"; 
+    }
+
+    </script>
+    
+</head>
+<body>
+    <center><table width="40%"  cellpadding="10">
+        <form name="f1">
+    <tr><td><font class="font"><b>Enter Your Number :</font></b> </td><td><input type="text" class="button1" name="t1"></td></tr>
+   <tr><td><font class="font"><b>Enter Your Total Number :</font></b></td><td> <input type="text" class="button1" name="t2"> </td></tr>
+    <tr><td><font class="font"><b>Your Percentage Is :</font></b></td> <td><input type="text" class="button1" name="t3"></td></tr> 
+   <tr><td colspan="2" align="center"><input type="button" class="button" value="CALCULATE" onclick="calculate()"></td></tr>
+   <tr><td colspan="2" align="center"><input type="reset" class="button" value="CLEAR"></td></tr>
+</center>
+<p id="p1"></p>
+</form>
+</table>
+<b><h3>Created My Lucky</h3></b>
+</body>
+</html>
